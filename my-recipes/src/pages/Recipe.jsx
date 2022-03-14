@@ -19,12 +19,47 @@ function Recipe() {
     }, [params.name])
 
     return (
-      <div>
-         {details.title}
-      </div>
+      <DetailWrapper>
+          <div>
+              <h2>{details.title}</h2>
+              <img src={details.image} alt="" />
+          </div>
+          <Button>
+              Instructions
+          </Button>
+          <Button>
+              Ingredients
+          </Button>
+      </DetailWrapper>
+        
     );
   }
 
-  const DetailWrapper = 
+const DetailWrapper = styled.div`
+  margin-top: 10rem;
+  margin-bottom: 5rem;
+  display: flex;
+  h2 {
+      margin-bottom: 2rem;
+  }
+  li {
+      font-size: 1.2rem;
+      line-height: 2.5rem
+  }
+  ul {
+      margin-top: 2rem;
+  }
+`
+
+const Button = styled.div`
+  padding: 1rem 2rem;
+  color: #313131;
+  background: white;
+  border: 2px solid black;
+  margin-right: 2rem;
+  font-weight: 600
+`
+
+
   
-  export default Recipe;
+export default Recipe;
