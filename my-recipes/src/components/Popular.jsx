@@ -67,7 +67,7 @@ const [popular, setPopular] = useState([])
   `;
 
   const Card = styled.div`
-  min-height: 25rem;
+  min-height: 15rem;
   border-radius: 2rem;
   overflow: hidden;
   position: relative;
@@ -76,8 +76,8 @@ const [popular, setPopular] = useState([])
     border-radius: 2rem;
     position: absolute;
     left: 0;
-    width: 100%
-    height: 100%
+    width: 50%
+    height: 50%
     object-ft: cover
   }
   
@@ -87,11 +87,12 @@ const [popular, setPopular] = useState([])
     left: 50%;
     bottom: 0%;
     transform: translate(-50%, 0%);
-    color: white;
+    color: black;
+    background-color: white
     width: 100%;
     text-align: center;
     font-weight: 600
-    font-size: 1rem;
+    font-size: 12rem;
     display: flex;
     justify-content: center;
     align-items: center

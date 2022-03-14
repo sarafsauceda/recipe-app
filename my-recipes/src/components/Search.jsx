@@ -16,9 +16,12 @@ function Search () {
     }
 
     return (
+        
       <FormStyle onSubmit={submitHandler}>
+          <div>What's for dinner?</div>
           <div>
         <FaSearch></FaSearch>
+        
           <input onChange={(e) => setInput(e.target.value)}
           type="text"
           value={input}
